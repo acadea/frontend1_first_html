@@ -1,0 +1,119 @@
+/* 
+   'h1' -- target all h1 element
+   ' ' -- a decendant
+   '>' -- a direct children
+   ',' -- use this to target multiple elements at once
+   '[type=text]' -- target all elements that has a "type" attribute with a value of 'text'
+   '.className' -- target class
+   '#id' -- target ID
+   'A ~ B' -- siblings 
+   more info: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+*/
+
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    height: 50px;
+    font-size: x-large;
+    background-color: rgb(71, 160, 255);
+}
+nav>ul{
+    padding-top: 10px;
+    margin-left: auto;
+    padding-left: 0;
+    margin: 0;
+}
+nav>ul>li{
+    padding-left: 20px;
+    list-style-type: none;
+    display: inline;
+}
+nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover{
+    text-decoration: none;
+    background-color: rgba(211, 211, 211, 0.753);
+}
+
+.container{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.container>h1{
+    /* REM is a unit relative to the base fontsize */
+    /* if base font size is 16px, 3 rem is 3* 16 = 48 px */
+    /* REM scales with screen size very well. Especially with 
+       retina HD display in mobile devices.
+    */
+    font-size: 3rem;
+}
+.container>.div-articles>article{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container>.div-articles>article{
+    line-height: 1.5rem;
+}
+.div-image{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.div-image>h5{
+    color: grey;
+}
+.div-image a{
+    color: grey;
+}
+.div-articles{
+    margin-bottom: 50px;
+}
+
+button{
+    font-size: larger;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(71, 160, 255);
+    padding: 15px;
+    color: rgb(71, 160, 255);
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+button:hover{
+    background-color: rgb(203, 215, 255);
+}
+
+footer{
+    display: block;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    bottom: 0;
+    height: 5rem;
+}
+footer>div{
+    height: 100%;
+}
+footer>div>ul{
+    display: block;
+    padding-top: 20px;
+    padding-left: 0;
+}
+footer>div>ul>li{
+    display: inline;
+    padding-left: 3rem;
+}
+footer>div>ul>li>a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
