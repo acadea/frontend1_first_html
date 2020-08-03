@@ -1,0 +1,39 @@
+.orange-bg{
+    background-color: rgb(255, 238, 206);
+}
+
+.red-bg{
+    background-color: rgb(255, 207, 207);
+}
+
+.wrapper {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper > div {
+  flex: 1 1 150px;
+  border-style: solid;
+  border-width: 3px;
+  margin: 5px;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.inline{
+  display: inline;
+}
+
+.block{
+  display: block;
+}
+
+.grid-demo img{
+  box-shadow: 5px 5px 10px #bfbfbf;
+}
